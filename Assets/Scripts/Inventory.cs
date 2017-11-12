@@ -28,14 +28,21 @@ public class Inventory : MonoBehaviour {
 		 */ 
 
 		//When I is pressed, show Inventory GUI
-		if (Input.GetKey(KeyCode.I)) {
+		if (Input.GetKey (KeyCode.I) && isShowing == false) {
 			isShowing = true;
 			showInventory ();
+			Debug.Log (isShowing);
+		} else if (Input.GetKey (KeyCode.I) && isShowing == true) {
+			temp = null;
+			isShowing = false;
+			Debug.Log (isShowing);
 		}
 
 		//When C is pressed, hide Inventory GUI
-		if (Input.GetKey(KeyCode.C)) {
+		if (Input.GetKey(KeyCode.C) && isShowing) {
 			temp = null;
+			isShowing = false;
+			Debug.Log (isShowing);
 		}
 	}
 
