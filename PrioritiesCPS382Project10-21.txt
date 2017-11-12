@@ -1,0 +1,25 @@
+Priorities
+1. Health Bar
+	-Main Character Health & Stamina Bar: done on 10/21/2017
+	-Enemy Health bar: done on 10/21/2017
+		 Make Enemy Health Bar look at the camera, then NPC's. Half done 10/22/2017. Need to find out how to use "Look At" function without changing position.
+
+2. NPC's
+	-When near them, have a text thing that says, "Press A to talk": Done
+	-When the user presses A, the text of the NPC shows.: Done
+	-After all of the text is done, make the NPC go back to "Press A to talk" and let the text loop again.
+
+3. Inventory
+	//Right now I have it so when the user presses R, it heals the Player's Health
+	-When the user collects the item, the item will be passed into the Inventory GUI (Haven't created this yet).
+	-When the user clicks on that item in the Inventory GUI, the item will do its "Effect".
+
+Error: 
+	When your branch says there's a merge conflict in the Unity Scene (I might have switched up the directions by mistake), just:
+		-Go to your repository, hit the settings tab, scroll all the way down and delete the repository.
+		-Make a new one with the UI title.
+		-Go to UI in Powershell and clone your new repository.
+		-Make sure you have a copy of your UI in your desktop, delete UI folder in your U drive.
+		-Copy the UI from your Desktop into the U drive. Run git pull origin master --allow-unrelated-histories.
+		-Now you can add, commit, and push with no errors. 
+		
